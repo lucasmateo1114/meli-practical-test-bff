@@ -1,0 +1,35 @@
+{
+  "name": "meli-practical-test-bff",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "set NODE_ENV=production&& node ./src/index.js",
+    "start:dev": "set NODE_ENV=development&& nodemon ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucasmateo1114/meli-practical-test-bff.git"
+  },
+  "keywords": [
+    "express",
+    "api"
+  ],
+  "author": "Lucas Sánchez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucasmateo1114/meli-practical-test-bff/issues"
+  },
+  "homepage": "https://github.com/lucasmateo1114/meli-practical-test-bff#readme",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "body-parser": "^1.20.2",
+    "config": "^3.3.12",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "nodemon": "^3.1.4",
+    "winston": "^3.13.1"
+  }
+}
