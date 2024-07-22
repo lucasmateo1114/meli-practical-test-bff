@@ -1,3 +1,3 @@
 export const check = (req, res) => {
-    res.send({ status: 'UP '})
+  res.send({ status: "UP " })
 }

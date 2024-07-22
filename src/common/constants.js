@@ -1,3 +1,3 @@
 export default {
-    PROMISE_FULFILLED: 'fulfilled'
+  PROMISE_FULFILLED: "fulfilled",
 }
