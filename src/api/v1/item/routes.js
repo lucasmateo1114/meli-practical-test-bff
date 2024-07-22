@@ -126,6 +126,9 @@ export default router
  *         free_shipping:
  *           type: string
  *           description: Define if item has free shipping
+ *         brand:
+ *           type: string
+ *           description: Item brand
  *     ItemElement:
  *       type: object
  *       properties:

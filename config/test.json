@@ -1,0 +1,10 @@
+{
+  "PORT": "80",
+  "MELI_API_BASE_URL": "http://api.test.com",
+  "AUTHOR": {
+    "NAME": "name",
+    "LASTNAME": "lastname"
+  },
+  "DEFAULT_SITE": "MLA",
+  "ALLOWED_ORIGIN": "*"
+}

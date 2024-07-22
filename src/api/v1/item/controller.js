@@ -16,7 +16,11 @@ const getAdaptedResponseForProducts = async (products, action) => {
   let mostRepeatedCategory
 
   products.forEach((product) => {
-    items.push(getCommonAdaptedProduct(product))
+    const brand = product?.attributes?.filter(({ id }) => id === "BRAND")[0]
+    items.push({
+      ...getCommonAdaptedProduct(product),
+      brand: brand?.value_name,
+    })
     categories[product.category_id] = (categories[product.category_id] || 0) + 1
     if (categories[product.category_id] > maxCount) {
       maxCount = categories[product.category_id]
@@ -81,7 +85,6 @@ export const getItemById = async (req, res) => {
   const action = "get-item"
   const { id } = req.params
   try {
-    console.log("petición a ", `${MELI_API_BASE_URL}/items/${id}`)
     const [productInfoResult, productDescriptionResult] =
       await Promise.allSettled([
         axios.get(`${MELI_API_BASE_URL}/items/${id}`),
